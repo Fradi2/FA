@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VS Code Confession</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+        body {
+            background: linear-gradient(45deg, #1e1e1e, #2a2a2a);
+            color: #d4d4d4;
+            font-family: 'Fira Code', monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+            animation: bgMove 10s infinite alternate ease-in-out;
+        }
+        .editor {
+            background: #252526;
+            width: 650px;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            border-left: 5px solid #00d9ff;
+            animation: fadeIn 1s ease-in-out;
+            text-align: center;
+            font-size: 24px;
+            color: #ff4da6;
+            text-shadow: 0 0 10px #ff4da6;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        @keyframes bgMove {
+            from { background-position: left; }
+            to { background-position: right; }
+        }
+    </style>
+</head>
+<body>
+    <div class="editor">I like you 💖</div>
+</body>
+</html>
